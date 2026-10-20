@@ -1,6 +1,6 @@
 # Cyberpunk Pet
 
-An animated ASCII-art cyberpunk girl in red that lives in her own sidebar panel, always visible while you code.
+An animated cyberpunk character (swap out image in future) in red that lives in their own sidebar panel, always visible while you code.
 
 ## Install
 
