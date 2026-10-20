@@ -1,0 +1,52 @@
+{
+  "name": "cybr-gurl",
+  "displayName": "cybr_gurl",
+  "description": "An animated ASCII cyberpunk girl that lives in your sidebar",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.140.0" },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "cyberpunkPet",
+          "title": "cybr_gurl",
+          "icon": "media/activitybar-icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "cyberpunkPet": [
+        {
+          "type": "webview",
+          "id": "cyberpunkPet.view",
+          "name": "cybr_gurl"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "cyberpunkPet.speedUp",
+        "title": "cybr_gurl: Speed Up Animation"
+      },
+      {
+        "command": "cyberpunkPet.slowDown",
+        "title": "cybr_gurl: Slow Down Animation"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/vscode": "^1.140.0",
+    "@vscode/vsce": "^4.0.0",
+    "typescript": "^7.0.2"
+  }
+}
